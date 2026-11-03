@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dinner plan</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2f6b3f">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{--bg:#f6f5f0;--card:#fff;--tx:#1f2421;--mut:#6b736d;--ac:#2f6b3f;--ac2:#e5efe7;--ln:#e2e0d8;--star:#e0a526;--danger:#b3412f}
+@media (prefers-color-scheme:dark){:root{--bg:#141714;--card:#1e221f;--tx:#e8ebe8;--mut:#99a39b;--ac:#7fc28f;--ac2:#25352a;--ln:#2f3530;--danger:#e07a68}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 16px 8px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--ln)}
+header h1{font-size:20px;margin:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+main{padding:12px 16px;max-width:720px;margin:0 auto}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom);z-index:6}
+nav a{flex:1;text-align:center;padding:9px 0 8px;color:var(--mut);text-decoration:none;font-size:12px}
+nav a b{display:block;font-size:20px;font-weight:400;line-height:1.2}
+nav a.on{color:var(--ac);font-weight:600}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:12px;margin-bottom:10px}
+.rc{display:block;color:inherit;text-decoration:none}
+.rc h3{margin:0 0 2px;font-size:16px}
+.mut{color:var(--mut);font-size:14px}
+.row{display:flex;gap:8px;align-items:center}
+.sp{flex:1}
+input,select,textarea{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--ln);border-radius:8px;padding:8px 10px;width:100%}
+textarea{min-height:90px}
+button,.btn{font:inherit;border:1px solid var(--ln);background:var(--card);color:var(--tx);border-radius:8px;padding:8px 12px;cursor:pointer;text-decoration:none;display:inline-block}
+.pri{background:var(--ac);border-color:var(--ac);color:#fff}
+@media (prefers-color-scheme:dark){.pri{color:#10200f}}
+.ghost{border:none;background:none;padding:6px 8px;color:var(--mut)}
+.danger{color:var(--danger)}
+.stars{color:var(--star);letter-spacing:1px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.chip{border:1px solid var(--ln);border-radius:999px;padding:4px 10px;font-size:13px;background:var(--card)}
+.chip.on{background:var(--ac2);border-color:var(--ac);color:var(--ac);font-weight:600}
+h2{font-size:17px;margin:18px 0 8px}
+ul.ing{list-style:none;padding:0;margin:0}
+ul.ing li{padding:6px 0;border-bottom:1px solid var(--ln);display:flex;gap:10px}
+ul.ing li .q{min-width:74px;font-weight:600;font-variant-numeric:tabular-nums}
+ol.st{padding-left:20px;margin:0}
+ol.st li{margin-bottom:10px}
+.step{display:flex;align-items:center;gap:6px}
+.step button{width:38px;height:38px;padding:0;font-size:20px}
+.step span{min-width:68px;text-align:center;font-weight:600}
+.day{margin-bottom:12px}
+.day h3{margin:0 0 6px;font-size:15px;display:flex;align-items:center}
+.day.today h3{color:var(--ac)}
+.item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--ln)}
+.item input[type=checkbox]{width:22px;height:22px;flex:none;accent-color:var(--ac)}
+.item.done .nm{text-decoration:line-through;color:var(--mut)}
+.item .nm{flex:1}
+.item .q{color:var(--mut);font-size:14px;font-variant-numeric:tabular-nums}
+.grp{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);margin:16px 0 2px}
+dialog{border:none;border-radius:14px;padding:16px;width:min(92vw,420px);background:var(--card);color:var(--tx)}
+dialog::backdrop{background:#0007}
+.ir{display:grid;grid-template-columns:64px 70px 1fr 32px;gap:6px;margin-bottom:6px}
+.ir select{grid-column:1/4;font-size:13px;padding:5px}
+.log{border-top:1px solid var(--ln);padding:8px 0}
+.starpick button{font-size:28px;border:none;background:none;color:var(--ln);padding:0 2px}
+.starpick button.on{color:var(--star)}
+.empty{text-align:center;color:var(--mut);padding:30px 10px}
+.small{font-size:13px}
+a{color:var(--ac)}
+</style>
+</head>
+<body>
+<header><button class="ghost" id="back" hidden aria-label="Terug">←</button><h1 id="ttl">Dinner plan</h1><span id="hact"></span></header>
+<main id="m"></main>
+<nav>
+<a href="#/recepten" data-t="recepten"><b>🍲</b>Recepten</a>
+<a href="#/week" data-t="week"><b>📅</b>Week</a>
+<a href="#/lijst" data-t="lijst"><b>🛒</b>Boodschappen</a>
+<a href="#/meer" data-t="meer"><b>⚙</b>Meer</a>
+</nav>
+<dialog id="dlg"></dialog>
+<script>
+'use strict';
+const KEY='dinnerplan_v1';
+let CAT={recepten:[],afdelingen:[],basisvoorraad:[]};
+let S=load();
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(s)return Object.assign(def(),s)}catch(e){}return def()}
+function def(){return{log:{},plan:{},eigen:{},verwijderd:{},basis:null,lijst:{},extra:[],toonBasis:false,week:null}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){alert('Opslaan mislukt: '+e.message)}}
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const AFD=()=>CAT.afdelingen.length?CAT.afdelingen:[{id:'overig',naam:'Overig'}];
+const afdNaam=id=>(AFD().find(a=>a.id===id)||{naam:'Overig'}).naam;
+const basis=()=>S.basis||CAT.basisvoorraad||[];
+function recepten(){const m=new Map();for(const r of CAT.recepten)if(!S.verwijderd[r.id])m.set(r.id,r);for(const id in S.eigen)m.set(id,S.eigen[id]);return[...m.values()].sort((a,b)=>a.titel.localeCompare(b.titel,'nl'))}
+const rec=id=>S.eigen[id]||CAT.recepten.find(r=>r.id===id);
+const basePort=r=>r.porties||4;
+// ---------- datum ----------
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const parse=s=>{const[y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
+function maandag(d){const x=new Date(d);x.setHours(0,0,0,0);x.setDate(x.getDate()-((x.getDay()+6)%7));return x}
+const DAG=['zo','ma','di','wo','do','vr','za'],DAGL=['Zondag','Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag'];
+const fmtD=d=>d.getDate()+'/'+(d.getMonth()+1);
+function weekStart(){return S.week?parse(S.week):maandag(new Date())}
+function weekDagen(){const m=weekStart();return[...Array(7)].map((_,i)=>{const d=new Date(m);d.setDate(m.getDate()+i);return d})}
+// ---------- hoeveelheden ----------
+function nice(q,e){if(q==null)return'';let v=q;
+ if(['g','ml'].includes(e)){v=q>=100?Math.round(q/10)*10:q>=20?Math.round(q/5)*5:Math.round(q)}
+ else v=Math.round(q*4)/4;
+ const s=Number.isInteger(v)?String(v):String(v).replace('.',',');
+ return s.replace(/,25$/,'¼').replace(/,5$/,'½').replace(/,75$/,'¾').replace(/^0(?=[¼½¾])/,'')}
+const qtxt=(q,e)=>q==null?'':(nice(q,e)+(e?' '+e:''));
+const stars=n=>'★'.repeat(n)+'☆'.repeat(5-n);
+function score(id){const l=S.log[id]||[];if(!l.length)return null;return l.reduce((a,b)=>a+b.s,0)/l.length}
+function laatst(id){const l=S.log[id]||[];return l.length?l.map(x=>x.d).sort().pop():null}
+// ---------- router ----------
+let filter={q:'',sort:'naam'};
+function go(h){location.hash=h}
+window.addEventListener('hashchange',render);
+function render(){
+ const p=(location.hash||'#/recepten').slice(2).split('/');const t=p[0]||'recepten';
+ document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.t===t||(t==='recept'||t==='bewerk')&&a.dataset.t==='recepten'));
+ $('#back').hidden=!(t==='recept'||t==='bewerk');$('#hact').innerHTML='';
+ window.scrollTo(0,0);
+ ({recepten:vRecepten,recept:()=>vRecept(decodeURIComponent(p[1])),bewerk:()=>vBewerk(p[1]?decodeURIComponent(p[1]):null),week:vWeek,lijst:vLijst,meer:vMeer}[t]||vRecepten)();
+}
+$('#back').onclick=()=>history.length>1?history.back():go('#/recepten');
+// ---------- recepten ----------
+function vRecepten(){
+ $('#ttl').textContent='Recepten';
+ $('#hact').innerHTML='<a class="btn" href="#/bewerk">＋</a>';
+ const m=$('#m');
+ m.innerHTML=`<input id="q" type="search" placeholder="Zoek op naam of ingrediënt" value="${esc(filter.q)}">
+ <div class="chips">${[['naam','A–Z'],['score','Beste score'],['oud','Lang niet gemaakt'],['nooit','Nog nooit gemaakt'],['snel','Snelst']].map(([k,l])=>`<button class="chip ${filter.sort===k?'on':''}" data-s="${k}">${l}</button>`).join('')}</div><div id="lst"></div>`;
+ $('#q').oninput=e=>{filter.q=e.target.value;lijstR()};
+ m.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{filter.sort=b.dataset.s;vRecepten()});
+ lijstR();
+}
+function tijdMin(r){const m=String(r.tijd||'').match(/\d+/);return m?+m[0]:999}
+function lijstR(){
+ const q=filter.q.toLowerCase().trim();
+ let rs=recepten().filter(r=>!q||(r.titel+' '+(r.ondertitel||'')+' '+r.ingredienten.map(i=>i.naam).join(' ')).toLowerCase().includes(q));
+ const s=filter.sort;
+ if(s==='score')rs.sort((a,b)=>(score(b.id)??-1)-(score(a.id)??-1));
+ if(s==='oud')rs=rs.filter(r=>laatst(r.id)).sort((a,b)=>laatst(a.id).localeCompare(laatst(b.id)));
+ if(s==='nooit')rs=rs.filter(r=>!laatst(r.id));
+ if(s==='snel')rs.sort((a,b)=>tijdMin(a)-tijdMin(b));
+ $('#lst').innerHTML=rs.length?rs.map(r=>{const sc=score(r.id),l=laatst(r.id);
+  return`<a class="card rc" href="#/recept/${encodeURIComponent(r.id)}"><h3>${esc(r.titel)}</h3><div class="mut">${esc(r.ondertitel||'')}</div>
+  <div class="row mut small" style="margin-top:4px">${r.tijd?'⏱ '+esc(r.tijd):''}<span class="sp"></span>${sc!=null?`<span class="stars">${stars(Math.round(sc))}</span>`:''}${l?' · '+fmtD(parse(l)):''}</div></a>`}).join(''):'<div class="empty">Geen recepten gevonden</div>';
+}
+let port={};
+function vRecept(id){
+ const r=rec(id);if(!r){go('#/recepten');return}
+ const p=port[id]||basePort(r),f=p/basePort(r);
+ $('#ttl').textContent=r.titel;
+ $('#hact').innerHTML=`<a class="btn ghost" href="#/bewerk/${encodeURIComponent(id)}" aria-label="Bewerken">✎</a>`;
+ const sc=score(id),log=(S.log[id]||[]).slice().sort((a,b)=>b.d.localeCompare(a.d));
+ const b=basis().map(x=>x.toLowerCase());
+ $('#m').innerHTML=`
+ <div class="mut">${esc(r.ondertitel||'')}</div>
+ <div class="chips">${r.tijd?`<span class="chip">⏱ ${esc(r.tijd)}</span>`:''}${r.kcal_per_portie?`<span class="chip">${r.kcal_per_portie} kcal/p</span>`:''}${(r.allergenen||[]).map(a=>`<span class="chip">${esc(a)}</span>`).join('')}${sc!=null?`<span class="chip stars">${stars(Math.round(sc))}</span>`:''}</div>
+ <div class="row" style="margin:6px 0 4px"><button class="pri" id="plan">＋ Op dag zetten</button><span class="sp"></span>
+ <div class="step"><button id="pm">−</button><span>${p} pers.</span><button id="pp">+</button></div></div>
+ <h2>Ingrediënten</h2>
+ <ul class="ing">${r.ingredienten.map(i=>`<li><span class="q">${esc(qtxt(i.hoeveelheid==null?null:i.hoeveelheid*f,i.eenheid))}</span><span>${esc(i.naam)}${i.merk?` <span class="mut">(${esc(i.merk)})</span>`:''}${b.includes(i.naam.toLowerCase())?' <span class="mut small">· voorraad</span>':''}${i.opmerking?`<div class="mut small">${esc(i.opmerking)}</div>`:''}</span></li>`).join('')}</ul>
+ ${r.materiaal&&r.materiaal.length?`<p class="mut small">Materiaal: ${esc(r.materiaal.join(', '))}</p>`:''}
+ <h2>Bereiding</h2><ol class="st">${(r.stappen||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ol>
+ ${r.fotos&&(r.fotos.voor||r.fotos.achter)?`<p class="small">Kaartje: ${r.fotos.voor?`<a href="https://drive.google.com/file/d/${esc(r.fotos.voor)}/view" target="_blank" rel="noopener">voorkant</a>`:''}${r.fotos.voor&&r.fotos.achter?' · ':''}${r.fotos.achter?`<a href="https://drive.google.com/file/d/${esc(r.fotos.achter)}/view" target="_blank" rel="noopener">achterkant</a>`:''}</p>`:''}
+ <h2 class="row">Logboek<span class="sp"></span><button id="lg">＋ Gemaakt</button></h2>
+ ${log.length?log.map((x,i)=>`<div class="log"><div class="row"><span class="stars">${stars(x.s)}</span><span class="sp"></span><span class="mut small">${fmtD(parse(x.d))}/${x.d.slice(0,4)}</span><button class="ghost small" data-del="${i}">✕</button></div>${x.o?`<div>${esc(x.o)}</div>`:''}</div>`).join(''):'<p class="mut">Nog niet gemaakt. Na het koken: score en opmerking toevoegen.</p>'}`;
+ $('#pm').onclick=()=>{port[id]=Math.max(1,p-1);vRecept(id)};
+ $('#pp').onclick=()=>{port[id]=p+1;vRecept(id)};
+ $('#plan').onclick=()=>dlgPlan(id,p);
+ $('#lg').onclick=()=>dlgLog(id);
+ document.querySelectorAll('[data-del]').forEach(bt=>bt.onclick=()=>{if(!confirm('Deze notitie verwijderen?'))return;const l=S.log[id],k=l.indexOf(log[+bt.dataset.del]);if(k>=0)l.splice(k,1);save();vRecept(id)});
+}
+function dlgPlan(id,p){
+ const d=$('#dlg');
+ d.innerHTML=`<h3 style="margin-top:0">Op dag zetten</h3><label class="mut small">Dag</label><input type="date" id="dd" value="${iso(new Date())}">
+ <label class="mut small" style="display:block;margin-top:8px">Personen</label><input type="number" id="dp" min="1" value="${p}">
+ <div class="row" style="margin-top:14px"><span class="sp"></span><button id="dx">Annuleer</button><button class="pri" id="dok">Toevoegen</button></div>`;
+ d.showModal();$('#dx').onclick=()=>d.close();
+ $('#dok').onclick=()=>{const day=$('#dd').value;if(!day)return;(S.plan[day]=S.plan[day]||[]).push({id,p:Math.max(1,+$('#dp').value||4)});save();d.close();toast('Toegevoegd op '+fmtD(parse(day)))};
+}
+function dlgLog(id){
+ const d=$('#dlg');let s=0;
+ d.innerHTML=`<h3 style="margin-top:0">Gemaakt</h3><label class="mut small">Datum</label><input type="date" id="ld" value="${iso(new Date())}">
+ <div class="starpick" style="margin:10px 0">${[1,2,3,4,5].map(n=>`<button data-n="${n}">★</button>`).join('')}</div>
+ <textarea id="lo" placeholder="Opmerking voor de volgende keer (bv. minder chili)"></textarea>
+ <div class="row" style="margin-top:14px"><span class="sp"></span><button id="dx">Annuleer</button><button class="pri" id="dok">Bewaar</button></div>`;
+ d.showModal();$('#dx').onclick=()=>d.close();
+ d.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>{s=+b.dataset.n;d.querySelectorAll('[data-n]').forEach(x=>x.classList.toggle('on',+x.dataset.n<=s))});
+ $('#dok').onclick=()=>{if(!s){alert('Kies een score');return}(S.log[id]=S.log[id]||[]).push({d:$('#ld').value||iso(new Date()),s,o:$('#lo').value.trim()});save();d.close();vRecept(id)};
+}
+// ---------- bewerken ----------
+function vBewerk(id){
+ const src=id?rec(id):null;
+ const r=JSON.parse(JSON.stringify(src||{id:'eigen-'+Date.now(),titel:'',ondertitel:'',tijd:'',porties:4,ingredienten:[{naam:'',hoeveelheid:null,eenheid:'',afdeling:'groenten'}],stappen:[],allergenen:[]}));
+ $('#ttl').textContent=src?'Recept bewerken':'Nieuw recept';
+ const m=$('#m');
+ const ingRow=(i,k)=>`<div class="ir" data-k="${k}"><input placeholder="hvh" inputmode="decimal" data-f="hoeveelheid" value="${i.hoeveelheid??''}"><input placeholder="eenh." data-f="eenheid" value="${esc(i.eenheid||'')}"><input placeholder="ingrediënt" data-f="naam" value="${esc(i.naam)}"><button class="ghost" data-rm="${k}">✕</button><select data-f="afdeling">${AFD().map(a=>`<option value="${a.id}" ${a.id===i.afdeling?'selected':''}>${esc(a.naam)}</option>`).join('')}</select></div>`;
+ m.innerHTML=`<label class="mut small">Titel</label><input id="bt" value="${esc(r.titel)}">
+ <label class="mut small">Ondertitel</label><input id="bo" value="${esc(r.ondertitel||'')}">
+ <div class="row" style="margin-top:6px"><div class="sp"><label class="mut small">Tijd</label><input id="bti" value="${esc(r.tijd||'')}" placeholder="25-30 min"></div><div style="width:110px"><label class="mut small">Personen</label><input id="bp" type="number" min="1" value="${basePort(r)}"></div></div>
+ <h2>Ingrediënten <span class="mut small">(voor het aantal personen hierboven)</span></h2><div id="ings">${r.ingredienten.map(ingRow).join('')}</div>
+ <button id="ai">＋ Ingrediënt</button>
+ <h2>Bereiding <span class="mut small">(één stap per alinea)</span></h2><textarea id="bs" style="min-height:200px">${esc((r.stappen||[]).join('\n\n'))}</textarea>
+ <div class="row" style="margin-top:14px">${src?'<button class="danger" id="del">Verwijder</button>':''}<span class="sp"></span><button class="pri" id="sv">Bewaar</button></div>`;
+ const collect=()=>[...m.querySelectorAll('.ir')].map(el=>{const o={};el.querySelectorAll('[data-f]').forEach(x=>o[x.dataset.f]=x.value.trim());o.hoeveelheid=o.hoeveelheid===''?null:parseFloat(o.hoeveelheid.replace(',','.'));if(isNaN(o.hoeveelheid))o.hoeveelheid=null;o.eenheid=o.eenheid||null;return o});
+ const bind=()=>m.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{b.closest('.ir').remove()});
+ bind();
+ $('#ai').onclick=()=>{$('#ings').insertAdjacentHTML('beforeend',ingRow({naam:'',afdeling:'groenten'},Date.now()));bind()};
+ $('#sv').onclick=()=>{
+  r.titel=$('#bt').value.trim();if(!r.titel){alert('Geef een titel');return}
+  r.ondertitel=$('#bo').value.trim();r.tijd=$('#bti').value.trim();r.porties=Math.max(1,+$('#bp').value||4);
+  const old=src?src.ingredienten:[];
+  r.ingredienten=collect().filter(i=>i.naam).map(i=>{const o=old.find(x=>x.naam===i.naam);return Object.assign({},o||{},i)});
+  r.stappen=$('#bs').value.split(/\n\s*\n/).map(s=>s.trim()).filter(Boolean);
+  S.eigen[r.id]=r;save();history.replaceState(null,'','#/recept/'+encodeURIComponent(r.id));render();
+ };
+ if(src)$('#del').onclick=()=>{if(!confirm('Recept "'+src.titel+'" verwijderen?'))return;delete S.eigen[id];if(CAT.recepten.some(x=>x.id===id))S.verwijderd[id]=1;save();go('#/recepten')};
+}
+// ---------- week ----------
+function vWeek(){
+ const dg=weekDagen(),m0=dg[0];
+ $('#ttl').textContent='Week '+fmtD(dg[0])+' – '+fmtD(dg[6]);
+ const today=iso(new Date());
+ $('#m').innerHTML=`<div class="row" style="margin-bottom:10px"><button id="wp">‹ Vorige</button><span class="sp"></span><button id="wn0">Deze week</button><span class="sp"></span><button id="wn">Volgende ›</button></div>
+ ${dg.map(d=>{const k=iso(d),it=S.plan[k]||[];return`<div class="card day ${k===today?'today':''}"><h3>${DAGL[d.getDay()]} ${fmtD(d)}<span class="sp"></span><button class="ghost" data-add="${k}">＋</button></h3>
+ ${it.length?it.map((x,i)=>{const r=rec(x.id);return`<div class="item"><a class="nm" href="#/recept/${encodeURIComponent(x.id)}">${esc(r?r.titel:'(verwijderd recept)')}</a><div class="step"><button data-pm="${k}|${i}">−</button><span class="small">${x.p} p</span><button data-pp="${k}|${i}">+</button></div><button class="ghost" data-rm="${k}|${i}">✕</button></div>`}).join(''):'<div class="mut small">—</div>'}</div>`}).join('')}`;
+ const sh=n=>{const d=new Date(m0);d.setDate(d.getDate()+n);S.week=iso(d);save();vWeek()};
+ $('#wp').onclick=()=>sh(-7);$('#wn').onclick=()=>sh(7);$('#wn0').onclick=()=>{S.week=null;save();vWeek()};
+ const at=s=>{const[k,i]=s.split('|');return[k,+i]};
+ document.querySelectorAll('[data-pm]').forEach(b=>b.onclick=()=>{const[k,i]=at(b.dataset.pm);S.plan[k][i].p=Math.max(1,S.plan[k][i].p-1);save();vWeek()});
+ document.querySelectorAll('[data-pp]').forEach(b=>b.onclick=()=>{const[k,i]=at(b.dataset.pp);S.plan[k][i].p++;save();vWeek()});
+ document.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{const[k,i]=at(b.dataset.rm);S.plan[k].splice(i,1);if(!S.plan[k].length)delete S.plan[k];save();vWeek()});
+ document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>dlgKies(b.dataset.add));
+}
+function dlgKies(day){
+ const d=$('#dlg');
+ d.innerHTML=`<h3 style="margin-top:0">${DAGL[parse(day).getDay()]} ${fmtD(parse(day))}</h3><input id="kq" type="search" placeholder="Zoek recept"><div id="kl" style="max-height:55vh;overflow:auto;margin-top:8px"></div><div class="row" style="margin-top:10px"><label class="mut small">Personen</label><input id="kp" type="number" min="1" value="4" style="width:80px"><span class="sp"></span><button id="dx">Sluit</button></div>`;
+ d.showModal();$('#dx').onclick=()=>d.close();
+ const f=()=>{const q=$('#kq').value.toLowerCase();$('#kl').innerHTML=recepten().filter(r=>r.titel.toLowerCase().includes(q)).map(r=>`<div class="item" data-id="${esc(r.id)}" style="cursor:pointer"><span class="nm">${esc(r.titel)}</span><span class="mut small">${esc(r.tijd||'')}</span></div>`).join('');
+  $('#kl').querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>{(S.plan[day]=S.plan[day]||[]).push({id:el.dataset.id,p:Math.max(1,+$('#kp').value||4)});save();d.close();vWeek()})};
+ $('#kq').oninput=f;f();
+}
+// ---------- boodschappen ----------
+function bouwLijst(){
+ const b=basis().map(x=>x.toLowerCase()),map=new Map(),dg=weekDagen();
+ for(const d of dg)for(const x of(S.plan[iso(d)]||[])){const r=rec(x.id);if(!r)continue;const f=x.p/basePort(r);
+  for(const i of r.ingredienten){const n=i.naam.trim(),nl=n.toLowerCase();if(nl==='water')continue;
+   const k=nl+'|'+(i.eenheid||'');let e=map.get(k);
+   if(!e){e={k,naam:n,eenheid:i.eenheid||null,q:null,afd:i.afdeling||'overig',basis:b.includes(nl),van:new Set(),merk:new Set()};map.set(k,e)}
+   if(i.hoeveelheid!=null)e.q=(e.q??0)+i.hoeveelheid*f;
+   e.van.add(r.titel);if(i.merk)e.merk.add(i.merk)}}
+ return[...map.values()];
+}
+function vLijst(){
+ const dg=weekDagen(),wk=iso(dg[0]);
+ $('#ttl').textContent='Boodschappen';
+ const L=S.lijst[wk]=S.lijst[wk]||{c:{},h:{}};
+ const items=bouwLijst();
+ const zicht=items.filter(e=>!L.h[e.k]&&(S.toonBasis||!e.basis));
+ const verborgen=items.filter(e=>L.h[e.k]),basisN=items.filter(e=>e.basis&&!L.h[e.k]).length;
+ const ex=S.extra;
+ let h=`<div class="mut small">Week ${fmtD(dg[0])} – ${fmtD(dg[6])} · <a href="#/week">week wijzigen</a></div>
+ <div class="row" style="margin:10px 0"><input id="nx" placeholder="Extra item toevoegen"><button id="ax">＋</button></div>`;
+ if(!items.length&&!ex.length)h+='<div class="empty">Nog geen recepten ingepland deze week.<br><a href="#/week">Naar weekplanner</a></div>';
+ if(ex.length)h+=`<div class="grp">Extra</div>`+ex.map((x,i)=>`<div class="item ${x.c?'done':''}"><input type="checkbox" data-xc="${i}" ${x.c?'checked':''}><span class="nm">${esc(x.n)}</span><button class="ghost" data-xr="${i}">✕</button></div>`).join('');
+ for(const a of AFD()){const g=zicht.filter(e=>e.afd===a.id).sort((x,y)=>(!!L.c[x.k])-(!!L.c[y.k])||x.naam.localeCompare(y.naam,'nl'));if(!g.length)continue;
+  h+=`<div class="grp">${esc(a.naam)}</div>`+g.map(e=>`<div class="item ${L.c[e.k]?'done':''}"><input type="checkbox" data-c="${esc(e.k)}" ${L.c[e.k]?'checked':''}><span class="nm">${esc(e.naam)}${e.merk.size?` <span class="mut small">(${esc([...e.merk].join(', '))})</span>`:''}${e.basis?' <span class="mut small">· voorraad</span>':''}<div class="mut small">${esc([...e.van].join(' · '))}</div></span><span class="q">${esc(qtxt(e.q,e.eenheid))}</span><button class="ghost small" data-h="${esc(e.k)}" title="Heb ik al">in huis</button></div>`).join('')}
+ h+=`<div style="margin-top:16px" class="row"><label class="row small"><input type="checkbox" id="tb" style="width:20px;height:20px" ${S.toonBasis?'checked':''}> Basisvoorraad tonen (${basisN})</label></div>`;
+ if(verborgen.length)h+=`<div class="grp">In huis (${verborgen.length})</div>`+verborgen.map(e=>`<div class="item done"><span class="nm">${esc(e.naam)}</span><span class="q">${esc(qtxt(e.q,e.eenheid))}</span><button class="ghost small" data-uh="${esc(e.k)}">terugzetten</button></div>`).join('');
+ if(items.length||ex.length)h+=`<div class="row" style="margin-top:16px"><span class="sp"></span><button id="rs">Afvinken wissen</button><button id="cp">Kopieer lijst</button></div>`;
+ $('#m').innerHTML=h;
+ const re=()=>{save();const y=scrollY;vLijst();scrollTo(0,y)};
+ document.querySelectorAll('[data-c]').forEach(c=>c.onchange=()=>{c.checked?L.c[c.dataset.c]=1:delete L.c[c.dataset.c];re()});
+ document.querySelectorAll('[data-h]').forEach(c=>c.onclick=()=>{L.h[c.dataset.h]=1;re()});
+ document.querySelectorAll('[data-uh]').forEach(c=>c.onclick=()=>{delete L.h[c.dataset.uh];re()});
+ document.querySelectorAll('[data-xc]').forEach(c=>c.onchange=()=>{ex[+c.dataset.xc].c=c.checked;re()});
+ document.querySelectorAll('[data-xr]').forEach(c=>c.onclick=()=>{ex.splice(+c.dataset.xr,1);re()});
+ const add=()=>{const v=$('#nx').value.trim();if(v){ex.push({n:v,c:false});re()}};
+ $('#ax').onclick=add;$('#nx').onkeydown=e=>{if(e.key==='Enter')add()};
+ $('#tb').onchange=e=>{S.toonBasis=e.target.checked;re()};
+ if($('#rs'))$('#rs').onclick=()=>{if(!confirm('Alle vinkjes wissen?'))return;L.c={};S.extra=ex.filter(x=>!x.c);re()};
+ if($('#cp'))$('#cp').onclick=()=>{let t='';for(const a of AFD()){const g=zicht.filter(e=>e.afd===a.id&&!L.c[e.k]);if(g.length)t+=a.naam+'\n'+g.map(e=>'- '+e.naam+(e.q!=null?' ('+qtxt(e.q,e.eenheid)+')':'')).join('\n')+'\n\n'}const xx=ex.filter(x=>!x.c);if(xx.length)t+='Extra\n'+xx.map(x=>'- '+x.n).join('\n');navigator.clipboard.writeText(t.trim()).then(()=>toast('Gekopieerd'),()=>alert(t))};
+}
+// ---------- meer ----------
+function vMeer(){
+ $('#ttl').textContent='Meer';
+ $('#m').innerHTML=`<div class="card"><h3 style="margin-top:0">Basisvoorraad</h3><p class="mut small">Deze ingrediënten heb je altijd in huis. Ze staan standaard niet op de boodschappenlijst. Eén per lijn.</p>
+ <textarea id="bv" style="min-height:180px">${esc(basis().join('\n'))}</textarea><div class="row" style="margin-top:8px"><button id="bvr" class="ghost small">Standaard herstellen</button><span class="sp"></span><button class="pri" id="bvs">Bewaar</button></div></div>
+ <div class="card"><h3 style="margin-top:0">Back-up</h3><p class="mut small">Je scores, opmerkingen, planning en eigen recepten staan enkel op deze GSM. Maak af en toe een back-up en zet het bestand op je Drive.</p>
+ <div class="row"><button id="ex">Back-up downloaden</button><span class="sp"></span><label class="btn">Terugzetten<input type="file" id="im" accept=".json,application/json" hidden></label></div></div>
+ <div class="card"><h3 style="margin-top:0">Recepten</h3><p class="mut small">${CAT.recepten.length} recepten uit de catalogus · ${Object.keys(S.eigen).length} eigen of bewerkt.</p><button id="up">Catalogus vernieuwen</button></div>`;
+ $('#bvs').onclick=()=>{S.basis=$('#bv').value.split('\n').map(s=>s.trim()).filter(Boolean);save();toast('Bewaard')};
+ $('#bvr').onclick=()=>{S.basis=null;save();vMeer()};
+ $('#ex').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S,null,1)],{type:'application/json'}));a.download='dinnerplan-backup-'+iso(new Date())+'.json';a.click()};
+ $('#im').onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{const o=JSON.parse(t);if(!o||typeof o!=='object'||!('log'in o))throw 0;if(!confirm('Huidige gegevens vervangen door deze back-up?'))return;S=Object.assign(def(),o);save();toast('Teruggezet');vMeer()}).catch(()=>alert('Geen geldig back-upbestand'))};
+ $('#up').onclick=()=>laadCat(true).then(()=>{toast('Catalogus bijgewerkt');vMeer()});
+}
+function toast(t){const e=document.createElement('div');e.textContent=t;e.style.cssText='position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:8px 14px;border-radius:999px;z-index:9;font-size:14px';document.body.appendChild(e);setTimeout(()=>e.remove(),1800)}
+// ---------- start ----------
+async function laadCat(vers){
+ try{const r=await fetch('recepten.json',{cache:vers?'reload':'default'});CAT=await r.json();localStorage.setItem(KEY+'_cat',JSON.stringify(CAT))}
+ catch(e){try{CAT=JSON.parse(localStorage.getItem(KEY+'_cat'))||CAT}catch(_){}}
+}
+laadCat(false).then(render);
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
