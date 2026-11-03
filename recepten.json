@@ -2050,6 +2050,1778 @@
         "achter": "1G6l6akq2fnslq1ka2kxE1ZxtqFKiaYMt"
       },
       "open_vragen": []
+    },
+    {
+      "id": "pasta-arrabbiata-spekjes",
+      "titel": "Pasta arrabbiata",
+      "ondertitel": "met vegan spekjes",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Kookpan",
+        "Koekenpan (2x)"
+      ],
+      "kcal_per_portie": 539,
+      "allergenen": [
+        "Gluten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "penne",
+          "hoeveelheid": 340,
+          "eenheid": "g",
+          "afdeling": "pasta_rijst"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "cherrytomaten",
+          "hoeveelheid": 500,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "tomaten",
+          "hoeveelheid": 4,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "chilivlokken",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden",
+          "opmerking": "naar smaak"
+        },
+        {
+          "naam": "vegan spekjes",
+          "hoeveelheid": 2,
+          "eenheid": "pak",
+          "afdeling": "koeling",
+          "merk": "Vivera"
+        },
+        {
+          "naam": "verse oregano",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Kook de penne volgens de verpakking.",
+        "Snijd de knoflook in dunne plakjes, halveer de cherrytomaten en snijd de tomaten in blokjes. Bak de knoflook 1-2 min in wat olie op middelhoog vuur. Voeg cherrytomaten, tomatenblokjes en chilivlokken naar smaak toe en bak 8-10 min. Breng op smaak met peper en zout.",
+        "Bak in een andere koekenpan de spekjes 5-7 min krokant op middelhoog vuur.",
+        "Giet de penne af en roer de tomaten en spekjes erdoor. Garneer met gehakte oregano en serveer direct."
+      ],
+      "fotos": {
+        "voor": "1i2bQEBHbO4RE0fy96JXuTLzCBc0f0Jfi",
+        "achter": "1PVC2owJdoxxxOcAH6kToLR-PC4MhF2JR"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "crispy-kip-pindanoedels",
+      "titel": "Crispy 'kip' pindanoedels",
+      "ondertitel": "met sperziebonen",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Kookpan (2x)",
+        "Diepe hapjespan",
+        "Koekenpan"
+      ],
+      "kcal_per_portie": 687,
+      "allergenen": [
+        "Gluten",
+        "Soja",
+        "Pinda"
+      ],
+      "ingredienten": [
+        {
+          "naam": "sperziebonen",
+          "hoeveelheid": 500,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "somennoedels",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "wereld"
+        },
+        {
+          "naam": "winterpeen",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "bosui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "pindakaas",
+          "hoeveelheid": 4,
+          "eenheid": "el",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "vegan kipschnitzel",
+          "hoeveelheid": 400,
+          "eenheid": "g",
+          "afdeling": "koeling",
+          "merk": "Vivera"
+        },
+        {
+          "naam": "sojasaus",
+          "hoeveelheid": null,
+          "eenheid": "el",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Breng twee pannen water aan de kook. Dop de sperziebonen, halveer ze en kook 6-8 min. Kook de noedels volgens de verpakking. Giet beide af en spoel om met koud water.",
+        "Schil de winterpeen en snijd in halve maantjes. Snijd de bosui in dunne ringen.",
+        "Verhit een ruime scheut olijfolie in een koekenpan op middelhoog vuur, voeg pindakaas en sojasaus toe en meng tot een gladde saus. Voeg de winterpeen toe en bak 3-4 min mee.",
+        "Bak ondertussen de kipschnitzel 7-8 min in een andere pan met wat olie op middelhoog vuur.",
+        "Voeg noedels en sperziebonen toe aan de winterpeen en roer 1-2 min mee. Breng op smaak.",
+        "Snijd de schnitzel in reepjes en serveer op de noedels met bosui."
+      ],
+      "fotos": {
+        "voor": "1Ql-KJZ-zZEOeCQmw-VIQgXt0chIOw9cz",
+        "achter": "1gEOdRPVnK018IwTOp2fig64_jTBD3ddR"
+      },
+      "open_vragen": [
+        "Sojasaus 4p: hoeveel el?"
+      ]
+    },
+    {
+      "id": "pita-harissa-bloemkool",
+      "titel": "Pita met harissa bloemkool",
+      "ondertitel": "en kikkererwten",
+      "tijd": "30-35 min",
+      "materiaal": [
+        "Oven"
+      ],
+      "kcal_per_portie": 616,
+      "allergenen": [
+        "Gluten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "bloemkool (medium)",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "kikkererwten",
+          "hoeveelheid": 700,
+          "eenheid": "g",
+          "afdeling": "conserven"
+        },
+        {
+          "naam": "harissakruiden",
+          "hoeveelheid": 8,
+          "eenheid": "g",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "rode paprika",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "pitabroodjes",
+          "hoeveelheid": 8,
+          "eenheid": "st",
+          "afdeling": "bakkerij"
+        },
+        {
+          "naam": "peterselie en munt",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "plantaardige yoghurt",
+          "hoeveelheid": 4,
+          "eenheid": "el",
+          "afdeling": "koeling"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden. Snijd de bloemkool in kleine roosjes. Spoel de kikkererwten en laat uitlekken. Verdeel beide over een bakplaat met bakpapier, besprenkel met olijfolie, harissakruiden, peper en zout en rooster 20-25 min. Hussel halverwege.",
+        "Snijd de paprika in blokjes, besprenkel met olie, peper en zout en bak de laatste 12-15 min mee.",
+        "Maak de pita's licht vochtig en verwarm 2-3 min. Hak peterselie en munt fijn.",
+        "Vul de pita's met de geroosterde groenten en kikkererwten en serveer met de verse kruiden en yoghurt."
+      ],
+      "fotos": {
+        "voor": "10NwCl_WMxF_oDUiJpPr29oSawv3n3BPZ",
+        "achter": "1sDxkW5MTeMR2YOChohoA9MG12SyR-g0g"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "knolselderijsteak-aardappelsalade",
+      "titel": "Knolselderijsteak",
+      "ondertitel": "met frisse aardappelsalade",
+      "tijd": "40-45 min",
+      "materiaal": [
+        "Oven",
+        "Kookpan"
+      ],
+      "kcal_per_portie": 503,
+      "allergenen": [
+        "Mosterd",
+        "Selderij"
+      ],
+      "ingredienten": [
+        {
+          "naam": "knolselderij",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "aardappelen",
+          "hoeveelheid": 1000,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "gerookt paprikapoeder",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden",
+          "opmerking": "mix gerookt paprikapoeder, uienpoeder, knoflookpoeder: samen 8 g"
+        },
+        {
+          "naam": "uienpoeder",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "knoflookpoeder",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "sperziebonen",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "bleekselderij",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "cherrytomaten",
+          "hoeveelheid": 400,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "dille en bieslook",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "mosterd",
+          "hoeveelheid": 2,
+          "eenheid": "el",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "agavesiroop",
+          "hoeveelheid": 2,
+          "eenheid": "el",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden. Schil de knolselderij en snijd in plakken van ±1,5 cm. Schil de aardappelen en snijd in kleine blokjes.",
+        "Leg de knolselderijsteaks op een bakplaat met bakpapier en besprenkel met de specerijen, olijfolie, peper en zout. Leg ook de aardappelen erbij met olie, peper en zout.",
+        "Rooster 20-25 min goudbruin en gaar; keer de steaks halverwege.",
+        "Dop en halveer de sperziebonen, kook 10-15 min en spoel af met koud water.",
+        "Snijd de bleekselderij in dunne reepjes, halveer de cherrytomaten en meng met dille, bieslook, de aardappelen en de sperziebonen. Breng op smaak met mosterd, agavesiroop, peper en zout.",
+        "Serveer de steaks met de aardappelsalade."
+      ],
+      "fotos": {
+        "voor": "1JA7ZjBtY60zdH7KjsgGwUIFkJC3Lh9W0",
+        "achter": "1TeH0ThH5__-0TmHXSaCwZA21CqUlmvsi"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "platbrood-falafel-zaatar",
+      "titel": "Platbrood met falafel",
+      "ondertitel": "en za'atar kruiden",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Oven",
+        "Koekenpan"
+      ],
+      "kcal_per_portie": 689,
+      "allergenen": [
+        "Gluten",
+        "Sesam"
+      ],
+      "ingredienten": [
+        {
+          "naam": "courgette",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "za'atar",
+          "hoeveelheid": 8,
+          "eenheid": "g",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "rode ui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "komkommer",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "falafel",
+          "hoeveelheid": 400,
+          "eenheid": "g",
+          "afdeling": "koeling",
+          "merk": "Maza"
+        },
+        {
+          "naam": "Libanees platbrood volkoren",
+          "hoeveelheid": 8,
+          "eenheid": "st",
+          "afdeling": "bakkerij"
+        },
+        {
+          "naam": "krulpeterselie en munt",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "plantaardige yoghurt",
+          "hoeveelheid": 4,
+          "eenheid": "el",
+          "afdeling": "koeling"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden. Snijd de courgette in plakken, leg op een bakplaat met bakpapier, bestrooi met de helft van de za'atar, peper en zout en rooster 10-15 min.",
+        "Snijd de rode ui in halve ringen en de komkommer in kleine blokjes. Bak de ui 2-3 min in wat olie en zet apart.",
+        "Bak de falafel in een schone pan met wat olie rondom goudbruin in 4-6 min.",
+        "Meng de yoghurt met de rest van de za'atar, peper en zout.",
+        "Verwarm de platbroden 2-3 min in de oven. Snijd peterselie en munt fijn.",
+        "Besmeer de platbroden met de saus, beleg met courgette, falafel, ui, komkommer en kruiden en vouw dicht."
+      ],
+      "fotos": {
+        "voor": "1sancBiSbgDGTrxpboV3TteOUqvo_oz7B",
+        "achter": "1AQqpKYKAFMW9sZpgXguQ135b6XFjb4Hl"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "spinazie-courgette-casarecce",
+      "titel": "Spinazie-courgette casarecce",
+      "ondertitel": "met krokante witte bonen",
+      "tijd": "25-30 min",
+      "materiaal": [
+        "Oven",
+        "Koekenpan",
+        "Kookpan",
+        "Staafmixer/blender"
+      ],
+      "kcal_per_portie": 573,
+      "allergenen": [
+        "Gluten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "witte bonen",
+          "hoeveelheid": 700,
+          "eenheid": "g",
+          "afdeling": "conserven"
+        },
+        {
+          "naam": "casarecce",
+          "hoeveelheid": 340,
+          "eenheid": "g",
+          "afdeling": "pasta_rijst"
+        },
+        {
+          "naam": "courgette",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "rode ui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "spinazie",
+          "hoeveelheid": 500,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "groentebouillon",
+          "hoeveelheid": 1,
+          "eenheid": "blokje",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "chilivlokken",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden",
+          "opmerking": "mix chilivlokken, gedroogde basilicum, paprikapoeder: samen 8 g"
+        },
+        {
+          "naam": "gedroogde basilicum",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "paprikapoeder",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden. Laat de witte bonen uitlekken, spoel kort, leg in een ovenschaal met olijfolie en zout en rooster 15-20 min.",
+        "Kook de casarecce volgens de verpakking. Bewaar een kopje kookvocht.",
+        "Snijd de courgette in halve maantjes en snipper de rode ui.",
+        "Bak ui en geperste knoflook 1-2 min in olijfolie op middelhoog vuur. Voeg de spinazie in delen toe en laat slinken.",
+        "Pureer de spinazie met het bouillonblokje tot een saus; voeg eventueel wat kookvocht toe.",
+        "Bak de courgette 5-6 min goudbruin in olijfolie. Voeg de spinaziesaus en specerijen toe, roer door en schep de casarecce erdoor.",
+        "Serveer met de krokante witte bonen."
+      ],
+      "fotos": {
+        "voor": "1_NvihrXVtFQk057SYt-KdN8So9Oq6B3y",
+        "achter": "1i3Dnyvwi76o9tbs_NrrL_hyGFx-wnr6F"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "frisse-orzo-kipstukjes",
+      "titel": "Frisse orzo met 'kipstukjes'",
+      "ondertitel": "en broccoli, champignons, citroen en dille",
+      "tijd": "25-30 min",
+      "materiaal": [
+        "Kookpan",
+        "Diepe hapjespan",
+        "Koekenpan"
+      ],
+      "kcal_per_portie": 612,
+      "allergenen": [
+        "Gluten",
+        "Soja"
+      ],
+      "ingredienten": [
+        {
+          "naam": "broccoli",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "champignons",
+          "hoeveelheid": 500,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "ui (klein)",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "orzo",
+          "hoeveelheid": 340,
+          "eenheid": "g",
+          "afdeling": "pasta_rijst"
+        },
+        {
+          "naam": "groentebouillon",
+          "hoeveelheid": 1,
+          "eenheid": "blokje",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "vegan kipstukjes",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "koeling",
+          "merk": "Vivera"
+        },
+        {
+          "naam": "dille",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "citroen",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "water",
+          "hoeveelheid": 700,
+          "eenheid": "ml",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Snijd de broccoli in roosjes en de steel in blokjes; kook 6-8 min gaar en giet af. Snijd de champignons in plakjes.",
+        "Snipper ui en knoflook. Bak ze 2-3 min in olijfolie in een hapjespan op middelhoog vuur. Voeg de champignons toe en bak 4-5 min.",
+        "Kook het water. Voeg de orzo toe aan de pan, verkruimel het bouillonblokje erboven en schenk het kokende water erbij. Laat 15-20 min zacht sudderen en roer regelmatig; voeg indien nodig extra water toe.",
+        "Bak de kipstukjes 5-6 min rondom goudbruin in olijfolie.",
+        "Hak de dille fijn en pers de citroen. Voeg samen met broccoli en kipstukjes toe aan de orzo en serveer direct."
+      ],
+      "fotos": {
+        "voor": "1Xp6JLxEYAFReJZt84nJT2_XYUY_NALuL",
+        "achter": "1eExS6uEjYC0M0s0lUlgaP-K9lnm21OvJ"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "creamy-orzo-spekjes",
+      "titel": "Creamy orzo met vegan spekjes",
+      "ondertitel": "en gegrilde courgette",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Oven",
+        "Koekenpan",
+        "Ruime hapjespan met deksel"
+      ],
+      "kcal_per_portie": 687,
+      "allergenen": [
+        "Gluten",
+        "Soja"
+      ],
+      "ingredienten": [
+        {
+          "naam": "ui (klein)",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "courgette",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "orzo",
+          "hoeveelheid": 340,
+          "eenheid": "g",
+          "afdeling": "pasta_rijst"
+        },
+        {
+          "naam": "groentebouillon",
+          "hoeveelheid": 1,
+          "eenheid": "blokje",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "sojaroom",
+          "hoeveelheid": 200,
+          "eenheid": "ml",
+          "afdeling": "koeling"
+        },
+        {
+          "naam": "vegan spekjes",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "koeling",
+          "merk": "Vivera"
+        },
+        {
+          "naam": "rucola",
+          "hoeveelheid": 1,
+          "eenheid": "bak",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "water",
+          "hoeveelheid": 700,
+          "eenheid": "ml",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden en kook het water. Snijd ui en knoflook in dunne plakjes en de courgette in plakken van ±0,5 cm.",
+        "Leg de courgette op een bakplaat met bakpapier, besprenkel met olijfolie, peper en zout en rooster 10-15 min; keer halverwege.",
+        "Bak ui en knoflook 1-2 min in olie op laag vuur. Voeg de orzo toe en bak 1-2 min mee. Verkruimel het bouillonblokje erin, blus met het kokende water en kook 8-10 min met deksel gaar, regelmatig roeren. Voeg de sojaroom toe en kook 2 min zonder deksel. Breng op smaak.",
+        "Bak de spekjes 4-6 min in een andere pan en roer ze door de orzo.",
+        "Serveer met de gegrilde courgette en rucola."
+      ],
+      "fotos": {
+        "voor": "1FTokEo9Wn48pxK61UWEvWRDZiPS3qowW",
+        "achter": "1bBKhKFjvwAet27i0W831EeQ2fMf9pcXe"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "risotto-cherrytomaten-kappertjes",
+      "titel": "Risotto met cherrytomaten",
+      "ondertitel": "en gefrituurde kappertjes",
+      "tijd": "35-40 min",
+      "materiaal": [
+        "Oven",
+        "Koekenpan",
+        "Hapjespan met deksel"
+      ],
+      "kcal_per_portie": 532,
+      "allergenen": [],
+      "ingredienten": [
+        {
+          "naam": "tomaten",
+          "hoeveelheid": 6,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "cherrytomaten",
+          "hoeveelheid": 500,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "groentebouillon",
+          "hoeveelheid": 2,
+          "eenheid": "blokje",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "rode ui (klein)",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "risottorijst",
+          "hoeveelheid": 340,
+          "eenheid": "g",
+          "afdeling": "pasta_rijst"
+        },
+        {
+          "naam": "pijnboompitten",
+          "hoeveelheid": 40,
+          "eenheid": "g",
+          "afdeling": "noten"
+        },
+        {
+          "naam": "kappertjes",
+          "hoeveelheid": 120,
+          "eenheid": "g",
+          "afdeling": "conserven"
+        },
+        {
+          "naam": "rozemarijn",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "balsamicoazijn",
+          "hoeveelheid": 4,
+          "eenheid": "el",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "water",
+          "hoeveelheid": 1000,
+          "eenheid": "ml",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden. Leg tomaten en cherrytomaten heel in een ovenschaal, besprenkel met olie, balsamico, peper en zout en rooster 15-20 min. Kook het water en los de bouillonblokjes erin op.",
+        "Snipper de rode ui en pers de knoflook. Fruit de ui zacht in olie in een hapjespan met dikke bodem. Voeg knoflook en risottorijst toe zodra de ui glazig is en bak 1 min mee. Voeg scheut voor scheut bouillon toe, telkens pas als de vorige is opgenomen (18-20 min).",
+        "Rooster de pijnboompitten 2-4 min goudbruin in een droge koekenpan en zet apart.",
+        "Verhit een flinke scheut olie in dezelfde pan. Dep de kappertjes droog en frituur ze tot ze niet meer borrelen (pas op voor spetters). Laat uitlekken op keukenpapier.",
+        "Snijd de geroosterde tomaten grof, voeg toe aan de risotto en bak 2-3 min mee.",
+        "Snijd de rozemarijn fijn en roer door de risotto met peper en zout. Serveer met de pijnboompitten en kappertjes."
+      ],
+      "fotos": {
+        "voor": "1I8dM38UpRX_mf7FZKstw-iRZaf2hakpB",
+        "achter": "1y3dC5OBB-xoeexxVhFZZgr-ekT_XbmMd"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "tex-mex-burrito-kipstukjes",
+      "titel": "Tex Mex burrito",
+      "ondertitel": "met 'kipstukjes' en courgette",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Koekenpan (2x)"
+      ],
+      "kcal_per_portie": 529,
+      "allergenen": [
+        "Gluten",
+        "Soja"
+      ],
+      "ingredienten": [
+        {
+          "naam": "courgette",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "gele paprika",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "tomaten",
+          "hoeveelheid": 4,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "vegan kipstukjes",
+          "hoeveelheid": 320,
+          "eenheid": "g",
+          "afdeling": "koeling",
+          "merk": "Vivera"
+        },
+        {
+          "naam": "tomatenpuree",
+          "hoeveelheid": 70,
+          "eenheid": "g",
+          "afdeling": "conserven"
+        },
+        {
+          "naam": "Tex Mex kruiden",
+          "hoeveelheid": 8,
+          "eenheid": "g",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "wraps",
+          "hoeveelheid": 8,
+          "eenheid": "st",
+          "afdeling": "bakkerij"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Snijd courgette en paprika in dunne reepjes en de tomaten in blokjes.",
+        "Bak courgette en paprika 3-4 min in olijfolie op middelhoog vuur. Voeg de kipstukjes toe en bak 3-4 min mee. Voeg tomaten, tomatenpuree en specerijen toe en bak 1 min. Breng op smaak.",
+        "Schep de vulling in het midden van een wrap (niet te vol).",
+        "Vouw de zijkanten naar binnen, breng de onderkant omhoog en rol zo strak mogelijk op.",
+        "Rooster de burrito's in een droge pan 2-3 min per kant, met de gevouwen kant eerst.",
+        "Snijd door en serveer direct."
+      ],
+      "fotos": {
+        "voor": "1rmnCQ8O6CJDGhvY45zcPk5I9qN9N7EUu",
+        "achter": "1ZUvhZ_-Ooih0QFCNCD52zinnj7fXX55L"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "aloo-gobi-turks-brood",
+      "titel": "Aloo Gobi van aardappel en bloemkool",
+      "ondertitel": "met Turks brood",
+      "tijd": "30-35 min",
+      "materiaal": [
+        "Oven",
+        "Ruime koekenpan/hapjespan",
+        "Fijne rasp"
+      ],
+      "kcal_per_portie": 520,
+      "allergenen": [
+        "Gluten",
+        "Mosterd"
+      ],
+      "ingredienten": [
+        {
+          "naam": "aardappelen",
+          "hoeveelheid": 1000,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "bloemkool (medium)",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "ui",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "gember",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "kurkuma",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden",
+          "opmerking": "mix kurkuma, garam masala, mosterdzaad: samen 8 g"
+        },
+        {
+          "naam": "garam masala",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "mosterdzaad",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "Turkse mini pide",
+          "hoeveelheid": 4,
+          "eenheid": "st",
+          "afdeling": "bakkerij"
+        },
+        {
+          "naam": "wilde spinazie",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "water",
+          "hoeveelheid": 400,
+          "eenheid": "ml",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Schil de aardappelen en snijd in hapklare blokjes. Snijd de bloemkool in kleine roosjes. Snipper de ui en rasp de geschilde gember fijn.",
+        "Fruit ui, gember en geperste knoflook 1-2 min in olijfolie op laag vuur. Voeg de specerijen toe en bak 1 min. Bak aardappel en bloemkool 4-5 min mee. Giet het water erbij en laat 15-20 min met deksel sudderen.",
+        "Verwarm de oven voor op 200 graden. Maak de pides licht vochtig en rooster 3-4 min.",
+        "Verwijder de stengels van de spinazie, snijd grof en spoel. Voeg in delen toe als aardappel en bloemkool beetgaar zijn. Breng op smaak en laat nog 4-5 min stoven op laag vuur.",
+        "Serveer met de pides."
+      ],
+      "fotos": {
+        "voor": "1iirGl1QayuG9pvJSMCHYLILgKDkBaSiU",
+        "achter": "1mnhfYWCrvVOUQ5VmSMw4cIyllPLYyr-h"
+      },
+      "open_vragen": [
+        "Gember 4p: het kaartje zegt '2 gr' — 1 stuk gember?"
+      ]
+    },
+    {
+      "id": "visburger-aardappelsalade",
+      "titel": "Visburger met aardappelsalade",
+      "ondertitel": "en een frisse mosterddressing",
+      "tijd": "25-30 min",
+      "materiaal": [
+        "Oven",
+        "Kookpan",
+        "Koekenpan"
+      ],
+      "kcal_per_portie": 594,
+      "allergenen": [
+        "Soja",
+        "Mosterd",
+        "Selderij",
+        "Gluten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "aardappelen",
+          "hoeveelheid": 1000,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "sperziebonen",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "cherrytomaten",
+          "hoeveelheid": 400,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "bleekselderij",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "dille en bieslook",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "vegan visburger",
+          "hoeveelheid": 400,
+          "eenheid": "g",
+          "afdeling": "diepvries"
+        },
+        {
+          "naam": "plantaardige yoghurt",
+          "hoeveelheid": 4,
+          "eenheid": "el",
+          "afdeling": "koeling"
+        },
+        {
+          "naam": "mosterd",
+          "hoeveelheid": 2,
+          "eenheid": "tl",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "agavesiroop",
+          "hoeveelheid": 1,
+          "eenheid": "el",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "extra vierge olijfolie",
+          "hoeveelheid": 2,
+          "eenheid": "el",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 220 graden. Snijd de gewassen aardappelen in hapklare blokjes, leg op een bakplaat met bakpapier, besprenkel met olie, peper en zout en rooster 20-25 min.",
+        "Dop en halveer de sperziebonen en kook 6-7 min gaar.",
+        "Halveer de cherrytomaten, snijd de bleekselderij in reepjes en hak dille en bieslook grof. Spoel de bonen af met koud water. Meng alles met de aardappelen. Maak een dressing van yoghurt, mosterd, agavesiroop en extra vierge olijfolie, giet over de salade en breng op smaak.",
+        "Bak de visburgers 3-4 min per kant krokant in olijfolie op middelhoog vuur.",
+        "Snijd de burgers in repen en serveer op de aardappelsalade."
+      ],
+      "fotos": {
+        "voor": "16G4dySelDeL6SELsGlvpsVFp8Fh1WDYf",
+        "achter": "1PhK1mIxFGzdaQk656j9CAivXSndlykI8"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "kikkererwten-curry-raita",
+      "titel": "Kikkererwten curry",
+      "ondertitel": "met frisse raita",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Oven",
+        "Koekenpan/wokpan met deksel",
+        "Zeef",
+        "Rasp"
+      ],
+      "kcal_per_portie": 717,
+      "allergenen": [
+        "Gluten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "ui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "gember",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "tomaten",
+          "hoeveelheid": 6,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "kurkuma",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden",
+          "opmerking": "mix kurkuma, komijn, korianderpoeder: samen 8 g"
+        },
+        {
+          "naam": "komijn",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "korianderpoeder",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "kikkererwten",
+          "hoeveelheid": 800,
+          "eenheid": "g",
+          "afdeling": "conserven"
+        },
+        {
+          "naam": "kokosroom",
+          "hoeveelheid": 200,
+          "eenheid": "ml",
+          "afdeling": "wereld"
+        },
+        {
+          "naam": "rode ui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "komkommer",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "Libanees platbrood volkoren",
+          "hoeveelheid": 8,
+          "eenheid": "st",
+          "afdeling": "bakkerij"
+        },
+        {
+          "naam": "plantaardige yoghurt",
+          "hoeveelheid": 8,
+          "eenheid": "el",
+          "afdeling": "koeling"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden. Snipper de ui en rasp gember en knoflook fijn. Snijd 2/3 van de tomaten in kleine blokjes (de rest is voor de raita).",
+        "Fruit ui, gember en knoflook in olijfolie. Voeg de specerijen toe en bak 1-2 min op middelhoog vuur.",
+        "Laat de kikkererwten uitlekken en voeg ze met de kokosroom en tomatenblokjes toe. Voeg eventueel water toe voor meer saus. Laat 10-12 min met deksel sudderen op laag vuur.",
+        "Raita: rasp rode ui, komkommer en de overige tomaat grof en laat uitlekken in een fijne zeef. Meng met de yoghurt en breng op smaak.",
+        "Verwarm de platbroden 2-3 min in de oven.",
+        "Serveer de curry met raita en platbrood."
+      ],
+      "fotos": {
+        "voor": "1h7Y44uu48J55X8TnBZNNQkXlK4Qd1aTZ",
+        "achter": "1RPFyxWmNedwWRb2Ug-ug4184r0QJ-iwW"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "miso-rijst-broccoli-champignons",
+      "titel": "Miso rijst met broccoli",
+      "ondertitel": "en kastanjechampignons",
+      "tijd": "25-30 min",
+      "materiaal": [
+        "Kookpan",
+        "Wokpan",
+        "Fijne rasp"
+      ],
+      "kcal_per_portie": 694,
+      "allergenen": [
+        "Soja",
+        "Noten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "zilvervliesrijst",
+          "hoeveelheid": 340,
+          "eenheid": "g",
+          "afdeling": "pasta_rijst"
+        },
+        {
+          "naam": "broccoli",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "gember",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "miso",
+          "hoeveelheid": 40,
+          "eenheid": "g",
+          "afdeling": "wereld"
+        },
+        {
+          "naam": "ui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "kastanjechampignons",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "walnoten",
+          "hoeveelheid": 80,
+          "eenheid": "g",
+          "afdeling": "noten"
+        },
+        {
+          "naam": "bosui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "sojasaus",
+          "hoeveelheid": null,
+          "eenheid": "el",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "sriracha",
+          "hoeveelheid": 2,
+          "eenheid": "tl",
+          "afdeling": "wereld"
+        },
+        {
+          "naam": "ketjap",
+          "hoeveelheid": 2,
+          "eenheid": "el",
+          "afdeling": "wereld"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden",
+          "opmerking": "1 el voor de saus"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Kook de rijst volgens de verpakking. Kook de broccoliroosjes de laatste 6-8 min mee en giet af.",
+        "Saus: rasp de geschilde gember; meng de helft met olijfolie, sojasaus, sriracha, ketjap, geperste knoflook en de helft van de miso.",
+        "Snipper de ui en snijd de champignons in plakjes. Fruit ui en de rest van de gember 1 min in olijfolie op laag vuur. Bak de champignons 4-5 min op middelhoog vuur. Voeg de rest van de miso toe en laat smelten.",
+        "Verkruimel de walnoten. Voeg rijst, broccoli, saus en walnoten toe aan de wokpan en meng 3-4 min op middelhoog vuur.",
+        "Garneer met bosui in ringen."
+      ],
+      "fotos": {
+        "voor": "1G9gX1GFglGp3H4QpuTxEgQOdcqdxjsby",
+        "achter": "14K4OO8-Fw3trev1_vs4xTwEG5p-H28SC"
+      },
+      "open_vragen": [
+        "Sojasaus 4p: hoeveel el?"
+      ]
+    },
+    {
+      "id": "pita-kibbeling-zoetzure-winterpeen",
+      "titel": "Pita kibbeling",
+      "ondertitel": "met zoetzure winterpeen",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Oven",
+        "Steelpannetje"
+      ],
+      "kcal_per_portie": 799,
+      "allergenen": [
+        "Gluten",
+        "Soja"
+      ],
+      "ingredienten": [
+        {
+          "naam": "komkommer",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "winterpeen",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "vegan kibbeling",
+          "hoeveelheid": 500,
+          "eenheid": "g",
+          "afdeling": "diepvries"
+        },
+        {
+          "naam": "pitabroodjes",
+          "hoeveelheid": 8,
+          "eenheid": "st",
+          "afdeling": "bakkerij"
+        },
+        {
+          "naam": "tomaten",
+          "hoeveelheid": 4,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "dille",
+          "hoeveelheid": 1,
+          "eenheid": "bosje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "witte wijnazijn",
+          "hoeveelheid": 150,
+          "eenheid": "ml",
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "suiker of agavesiroop",
+          "hoeveelheid": 6,
+          "eenheid": "el",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "water",
+          "hoeveelheid": 60,
+          "eenheid": "ml",
+          "afdeling": "overig"
+        },
+        {
+          "naam": "plantaardige yoghurt",
+          "hoeveelheid": 4,
+          "eenheid": "el",
+          "afdeling": "koeling"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Verwarm de oven voor op 200 graden. Snijd de helft van de komkommer in plakjes en de andere helft in kleine blokjes.",
+        "Zoetzure winterpeen: snijd de geschilde winterpeen in hele dunne reepjes. Breng azijn, suiker/agave, water en een snuf zout aan de kook en roer tot alles is opgelost. Giet over de winterpeen en komkommerplakjes en laat afkoelen.",
+        "Bak de kibbeling 13-15 min op een bakplaat met bakpapier in de oven. Maak de pita's licht vochtig en verwarm de laatste 2 min mee.",
+        "Snijd de tomaten in plakjes. Hak de dille fijn en meng met de komkommerblokjes en yoghurt; breng op smaak.",
+        "Vul de pita's met de komkommer-dillesalade, tomaat en kibbeling en garneer met de zoetzure winterpeen."
+      ],
+      "fotos": {
+        "voor": "1TDif1M9ugUEqJkKksIwcUGjwdgRVKly2",
+        "achter": "1V_4rGdpay6EfyShPyVShLrPOdKlP30xV"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "fusilli-zongedroogde-tomatensaus",
+      "titel": "Fusilli met zongedroogde-tomatensaus",
+      "ondertitel": "en zwarte bonen",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Kookpan",
+        "Koekenpan",
+        "Blender/staafmixer"
+      ],
+      "kcal_per_portie": 720,
+      "allergenen": [
+        "Gluten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "volkoren fusilli",
+          "hoeveelheid": 340,
+          "eenheid": "g",
+          "afdeling": "pasta_rijst"
+        },
+        {
+          "naam": "rode paprika",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "aubergine",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "zwarte bonen",
+          "hoeveelheid": 800,
+          "eenheid": "g",
+          "afdeling": "conserven"
+        },
+        {
+          "naam": "zongedroogde tomaten",
+          "hoeveelheid": 1,
+          "eenheid": "pot",
+          "afdeling": "conserven"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Kook de fusilli volgens de verpakking.",
+        "Snijd paprika en aubergine in kleine blokjes en bak 8-10 min in olijfolie op middelhoog vuur; roer regelmatig.",
+        "Spoel de zwarte bonen. Pureer de helft van de zongedroogde tomaten met de helft van de bonen tot een saus; voeg eventueel water toe en breng op smaak.",
+        "Hak de rest van de zongedroogde tomaten grof en voeg ze met de rest van de bonen en geperste knoflook toe aan de pan. Bak 1-2 min.",
+        "Meng de saus en de fusilli erdoor, verwarm 1 min en serveer."
+      ],
+      "fotos": {
+        "voor": "1pq23-HbmX7hJkZhCnA156VcoYDUCZMWa",
+        "achter": "1dqHtIJfNcJxbjqVZud4QDnCzY1QKBxCn"
+      },
+      "open_vragen": []
+    },
+    {
+      "id": "kimchi-noedels-cashew-broccoli",
+      "titel": "Kimchi noedels",
+      "ondertitel": "met cashewnoten en broccoli",
+      "tijd": "20-25 min",
+      "materiaal": [
+        "Kookpan",
+        "Koekenpan (2x)",
+        "Grove rasp"
+      ],
+      "kcal_per_portie": 558,
+      "allergenen": [
+        "Gluten",
+        "Noten"
+      ],
+      "ingredienten": [
+        {
+          "naam": "ramennoedels",
+          "hoeveelheid": 300,
+          "eenheid": "g",
+          "afdeling": "wereld"
+        },
+        {
+          "naam": "winterpeen",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "broccoli",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "rode ui",
+          "hoeveelheid": 1,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "bosui",
+          "hoeveelheid": 2,
+          "eenheid": "st",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "knoflook",
+          "hoeveelheid": 2,
+          "eenheid": "teentje",
+          "afdeling": "groenten"
+        },
+        {
+          "naam": "cashewnoten",
+          "hoeveelheid": 60,
+          "eenheid": "g",
+          "afdeling": "noten"
+        },
+        {
+          "naam": "kimchi",
+          "hoeveelheid": 200,
+          "eenheid": "g",
+          "afdeling": "koeling"
+        },
+        {
+          "naam": "olijfolie",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "peper",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        },
+        {
+          "naam": "zout",
+          "hoeveelheid": null,
+          "eenheid": null,
+          "afdeling": "kruiden"
+        }
+      ],
+      "stappen": [
+        "Kook de noedels volgens de verpakking en spoel af met koud water.",
+        "Rasp de geschilde winterpeen grof. Snijd de broccoli in kleine roosjes, snipper de rode ui en snijd de bosui in ringen.",
+        "Fruit rode ui en geperste knoflook 1-2 min in olijfolie op middelhoog vuur. Bak de broccoli 5 min mee, voeg de winterpeen toe en bak nog 5-7 min tot de broccoli gaar is.",
+        "Rooster de cashewnoten goudbruin in een droge pan.",
+        "Voeg 2/3 van de kimchi en de noedels toe aan de groenten en verwarm 1-2 min.",
+        "Serveer met de rest van de kimchi, cashewnoten en bosui."
+      ],
+      "fotos": {
+        "voor": "1k3llcOTAUJphMS2aLWJ6m63UHR0JXbS2",
+        "achter": "1-Pyij0xBPDyRaaGhoY65SnN-d99d6D-w"
+      },
+      "open_vragen": []
     }
   ]
 }
